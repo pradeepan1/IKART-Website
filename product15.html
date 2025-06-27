@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iKart | iPhone 15</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f7f9fc;
+      color: #1a1a1a;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(to bottom right, #404f42, #a6b0aa);
+    }
+
+    .heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .heading h1 {
+      font-size: 2rem;
+      color: #222;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 28px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-options {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .product-options h2 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    .option-group {
+      margin-bottom: 25px;
+    }
+
+    .option-group button {
+      margin: 5px;
+      padding: 10px 20px;
+      border-radius: 30px;
+      border: 1px solid #ccc;
+      background-color: #f2f2f2;
+      color: #333;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .option-group button:hover {
+      background-color: #007aff;
+      color: white;
+      border-color: #007aff;
+    }
+
+    .features {
+      margin-top: 40px;
+      background: #f9f9f9;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+    }
+
+    .features h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .features ul {
+      padding-left: 20px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+    }
+
+    .action-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .action-buttons button {
+      padding: 15px 30px;
+      border-radius: 30px;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .buy-btn {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .buy-btn:hover {
+      background-color: #218838;
+    }
+
+    .cart-btn {
+      background-color: #ff9800;
+      color: white;
+    }
+
+    .cart-btn:hover {
+      background-color: #fb8c00;
+    }
+
+    @media (max-width: 768px) {
+      .product-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .action-buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">IKART</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="heading">
+      <h1>Apple iPhone 15 (128 GB) - Green</h1>
+    </div>
+
+    <div class="product-grid">
+      <div class="image-container">
+        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/z/3/-original-imagtc5fqyz8tu4c.jpeg?q=70" alt="iPhone 15 Blue">
+      </div>
+
+      <div class="product-options">
+        <div class="option-group">
+          <h2>Storage</h2>
+          <button>128 GB</button>
+          <button>256 GB</button>
+          <button>512 GB</button>
+        </div>
+
+        <div class="option-group">
+          <h2>Color</h2>
+          <button>Blue</button>
+          <button>Black</button>
+          <button>Green</button>
+          <button>Yellow</button>
+          <button>Pink</button>
+        </div>
+
+        <div class="option-group">
+          <h2>Model</h2>
+          <button>iPhone 15 mini</button>
+          <button>15 Plus</button>
+          <button>15 Pro</button>
+          <button>15 Pro Max</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>6.1" Super Retina XDR OLED display</li>
+        <li>A16 Bionic chip with 5-core GPU</li>
+        <li>48 MP Main + 12 MP Ultra Wide Cameras</li>
+        <li>Front Ceramic Shield | Aluminum body</li>
+        <li>4K Dolby Vision HDR video</li>
+        <li>USB-C, MagSafe wireless charging</li>
+        <li>iOS 17, Face ID, IP68 water resistance</li>
+      </ul>
+    </div>
+
+    <div class="action-buttons">
+      <button class="buy-btn">Buy Now</button>
+      <button class="cart-btn">Add to Cart</button>
+    </div>
+  </div>
+
+</body>
+</html>

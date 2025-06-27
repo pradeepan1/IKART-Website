@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iPhone 14 - iKart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f7f9fc;
+      margin: 0;
+      padding: 0;
+      color: #1a1a1a;
+      background: linear-gradient(to right, #f6f6f4, #b1a7a7);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(to bottom right, #c5c55c, #d6d7c2);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      color: #222;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 25px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .product-info h2 {
+      margin: 20px 0 10px;
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    .option-group button {
+      margin: 6px;
+      padding: 10px 22px;
+      border-radius: 30px;
+      border: 1px solid #ccc;
+      background-color: #f2f2f2;
+      color: #333;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .option-group button:hover {
+      background-color: #007aff;
+      color: #fff;
+      border-color: #007aff;
+    }
+
+    .features {
+      background-color: #f9f9f9;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      margin-top: 40px;
+    }
+
+    .features h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .features ul {
+      padding-left: 20px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+    }
+
+    .action-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .action-buttons button {
+      padding: 15px 30px;
+      border-radius: 30px;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .buy-btn {
+      background-color: #28a745;
+      color: white;
+      
+    }
+
+    .buy-btn:hover {
+      background-color: #218838;
+    }
+
+    .cart-btn {
+      background-color: #ff9800;
+      color: white;
+    }
+
+    .cart-btn:hover {
+      background-color: #fb8c00;
+    }
+
+    @media (max-width: 768px) {
+      .product-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .action-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">IKART</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="header">
+      <h1>iPhone 14 pro max (128 GB) - GOLD</h1>
+    </div>
+
+    <div class="product-grid">
+      <div class="image-container">
+        <img src="https://rukminim2.flixcart.com/image/312/312/ktketu80/mobile/6/v/c/iphone-13-pro-max-mllh3hn-a-apple-original-imag6vpgpycue85h.jpeg?q=70" alt="iPhone 14 pro max gold">
+      </div>
+
+      <div class="product-info">
+        <div class="option-group">
+          <h2>Storage</h2>
+          <button>128 GB</button>
+          <button>256 GB</button>
+          <button>512 GB</button>
+        </div>
+
+        <div class="option-group">
+          <h2>Color</h2>
+          <button>Blue</button>
+          <button>Midnight</button>
+          <button>Starlight</button>
+          <button>Purple</button>
+        </div>
+
+        <div class="option-group">
+          <h2>Model</h2>
+          <button>iPhone 14</button>
+          <button>14 Plus</button>
+          <button>14 Pro</button>
+          <button>14 mini</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>6.1" Super Retina XDR OLED display</li>
+        <li>A15 Bionic chip with 5-core GPU</li>
+        <li>Dual 12 MP camera system | Night mode, Deep Fusion</li>
+        <li>Ceramic Shield | Aerospace-grade aluminum</li>
+        <li>iOS 17 | Face ID | MagSafe support</li>
+        <li>IP68 water & dust resistance</li>
+        <li>Battery life up to 20 hours video playback</li>
+      </ul>
+    </div>
+
+    <div class="action-buttons">
+      <button class="buy-btn">Buy Now</button>
+      <button class="cart-btn">Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #030303;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-weight: 500;
+  color: #555;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #f8f8ff;
+  background-color: rgb(16, 16, 16);
+}
+
+.buy-btn button {
+  background-color: cornflowerblue;
+}
+
+/* iKart Logo Image */
+.ikart {
+  width: 200px;
+  height: 90px;
+  border-radius: 15%;
+  margin: 10px;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://www.apple.com/v/iphone/home/bl/images/meta/iphone__d1bl7z5o09om_og.png') no-repeat center/cover;
+  padding: 8rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+}
+
+/* Section */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+/* Product Cards */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.product-card {
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+.product-card:hover{
+    transform: translate(25px)scale(1.2) ;
+    cursor: pointer;
+}
+
+.product-card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #0071e3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #111;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    margin-left: 1rem;
+  }
+}
+
+/* ===== Login Page Styles ===== */
+
+/* Login Page Background */
+.login-page {
+  background: url("https://creativebooster.net/cdn/shop/products/smartphone-with-login-page-and-colorful-liquid-background-psd_60797ed820b57.jpg?v=1647950409&width=1100") no-repeat center/cover ;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  margin-top: 5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  padding: 0.75rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-form button {
+  padding: 0.75rem;
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #005ecb;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.signup-link a {
+  color: #0071e3;
+  text-decoration: underline;
+}
+
